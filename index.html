@@ -6,37 +6,60 @@
     <title>Midterm Project</title>
     <link rel="stylesheet" href="style.css"> 
 </head>
+<!-- Main form of the website -->
+
 <body>
-    <div class="form_container" id = "task1_from">
+        <h1>Group Form</h1>
+
+    <div class="form-container" id = "task1-from">
         <h2>Task 1: Form Validation</h2>
-        <form id = "Validation_ form">
+        <form id = "validation-form">
 <!-- Form of First name input -->
-        <label for="First_name"> First name:</label>       
-        <input type="text" id = "First_name" placeholder="First name" required> 
+ <div class="form-group">
+        <label for="first-name"> First name:</label> <br>     
+        <input type="text" id = "first-name" placeholder="First name" required> 
         <br> 
+        <div class="error-message" id="first-name-error"></div>
+
+</div>
 <!-- Form of last name input -->
-        <label for="Last_name"> Last name:</label>         
-        <input type="text" id = "Last_name" placeholder="Last name" required>
+<div class="form-group">
+        <label for="last-name"> Last name:</label> <br>       
+        <input type="text" id = "last-name" placeholder="Last name" required>
         <br>
+        <div class="error-message" id="last-name-error"></div>
+
+</div>
 <!-- Form of email input -->
-        <label for="Email"> Email:</label>      
-        <input type="email" id = "Email" placeholder="you@company.com" required>
+<div class="form-group">
+        <label for="Email"> Email:</label> <br>      
+        <input type="email" id = "email" placeholder="you@company.com" required>
         <br>
+        <div class="error-message" id="email-error"></div>
+
+</div>
 <!-- Form of password input -->
-        <label for="Password"> Password:</label>      
-        <input type="password" id = "Password" placeholder="Password" minlength="8" required>
+<div class="form-group">
+        <label for="Password"> Password:</label> <br>      
+        <input type="password" id = "password" placeholder="Password" minlength="8" required>
         <br>
+        <div class="error-message" id="password-error"></div>
+
+</div>
 <!-- Option values for team size -->
-        <label for="Team_size"> Team size:</label>      
-        <select id="Team_size" name = "Team_size">
+<div class="form-group">
+        <label for="Team_size"> Team size:</label> <br>     
+        <select id="team-size" name = "team-size">
             <option value="">Select...</option>
             <option value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>
         </select>
         <br>
+        <div class="error-message" id="team-size-error"></div>
+</div>
 <!-- Labels of checkbox -->
-        <div class="form-group checkbox-group">
+<div class="form-group">
             <label>Technologies/Skills (Select at least 3):</label> <br>
             <label><input type="checkbox" name="tech" value="HTML">HTML</label>
             <label><input type="checkbox" name="tech" value="CSS">CSS</label> <br>
@@ -44,7 +67,8 @@
             <label><input type="checkbox" name="tech" value="Python">Python</label><br>
             <label><input type="checkbox" name="tech" value="Java">Java</label>
             <label><input type="checkbox" name="tech" value="ReactJS">ReactJS</label>
-            </div>
+            <div class="error-message" id="tech-error"></div>
+</div>
 
 <!-- Button to submit all the inputs -->
         <input type="submit">                              
