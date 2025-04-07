@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midterm Project</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <div class="form_container" id = "task1_from">
+        <h2>Task 1: Form Validation</h2>
+        <form id = "Validation_ form">
+<!-- Form of First name input -->
+        <label for="First_name"> First name:</label>       
+        <input type="text" id = "First_name" placeholder="First name" required> 
+        <br> 
+<!-- Form of last name input -->
+        <label for="Last_name"> Last name:</label>         
+        <input type="text" id = "Last_name" placeholder="Last name" required>
+        <br>
+<!-- Form of email input -->
+        <label for="Email"> Email:</label>      
+        <input type="email" id = "Email" placeholder="you@company.com" required>
+        <br>
+<!-- Form of password input -->
+        <label for="Password"> Password:</label>      
+        <input type="password" id = "Password" placeholder="Password" minlength="8" required>
+        <br>
+<!-- Option values for team size -->
+        <label for="Team_size"> Team size:</label>      
+        <select id="Team_size" name = "Team_size">
+            <option value="">Select...</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+        <br>
+<!-- Labels of checkbox -->
+        <div class="form-group checkbox-group">
+            <label>Technologies/Skills (Select at least 3):</label> <br>
+            <label><input type="checkbox" name="tech" value="HTML">HTML</label>
+            <label><input type="checkbox" name="tech" value="CSS">CSS</label> <br>
+            <label><input type="checkbox" name="tech" value="JavaScript">JavaScript</label>
+            <label><input type="checkbox" name="tech" value="Python">Python</label><br>
+            <label><input type="checkbox" name="tech" value="Java">Java</label>
+            <label><input type="checkbox" name="tech" value="ReactJS">ReactJS</label>
+            </div>
+
+<!-- Button to submit all the inputs -->
+        <input type="submit">                              
+    </form>
+</div>
+
+</body>
+
+</html>
