@@ -1,87 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Midterm Project</title>
-    <link rel="stylesheet" href="style.css"> 
-</head>
-<body>
-<!-- Task 2 website -->
- <div class = "dice-game-container" id = "dice-game-container" style="display: none;">
-        <h2>Task 2 Dice Game:</h2>
- </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration</title>
 
-<!-- Main form of the website -->
+    <!-- Google Fonts  -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Group Form</h1>
 
-    <div class="form-container" id = "task1-form">
-        <h2>Group Form</h2>
-        <form id = "validation-form">
+      <!-- Registration Form -->
+      <form id="registrationForm" novalidate>
+        <!-- Row for first and last name inputs -->
+        <div class="form-row">
+          <div class="form-group">
+            <label for="firstName">First name</label>
+            <input
+              type="text"
+              id="firstName"
+              name="firstName"
+              placeholder="First name"
+            />
+          </div>
+          <div class="form-group">
+            <label for="lastName">Last name</label>
+            <input
+              type="text"
+              id="lastName"
+              name="lastName"
+              placeholder="Last name"
+            />
+          </div>
+        </div>
 
-<!-- First and last name inputs are in separate class "name-container" for styling purposes -->
-<!-- Form of First name input -->
-<div class="form-group">
-   <div class = "name-container">
-     <div id = "first-name-container">
-        <label for="first-name"> First name:</label>   
-        <input type="text" id = "first-name" placeholder="First name" required> 
-        <div class="error-message" id="first-name-error"></div>
-     </div>
-     <!-- Form of last name input -->
-<div id = "last-name-container">
-        <label for="last-name"> Last name:</label>    
-        <input type="text" id = "last-name" placeholder="Last name" required>
-        <div class="error-message" id="last-name-error"></div>
-</div>
-   </div>
-</div>
-<br>
-<!-- Form of email input -->
-<div class="form-group">
-        <label for="Email"> Email:</label>       
-        <input type="email" id = "email" placeholder="you@company.com" required>
-        <br>
-        <div class="error-message" id="email-error"></div>
-</div>
-<br>
-<!-- Form of password input -->
-<div class="form-group">
-        <label for="Password"> Password:</label>      
-        <input type="password" id = "password" placeholder="Password" minlength="8" required>
-        <br>
-        <div class="error-message" id="password-error"></div>
-</div>
-<br>
-<!-- Option values for team size -->
-<div class="form-group">
-        <label for="Team_size"> Team size:</label>     
-        <select id="team-size" name = "team-size">
-            <option value="">Select...</option>
+        <!-- Email input -->
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="you@company.com"
+          />
+        </div>
+
+        <!-- Password input -->
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="password"
+          />
+        </div>
+
+        <!-- Dropdown for team size -->
+        <div class="form-group">
+          <label for="teamSize">Team Size</label>
+          <select id="teamSize" name="teamSize">
             <option value="1">1</option>
             <option value="2">2</option>
-            <option value="3">3</option>
-        </select>
-        <br>
-        <div class="error-message" id="team-size-error"></div>
-</div>
-<br>
-<!-- Labels of checkbox -->
-<div class="form-group">
-            <label>Technologies/Skills (Select at least 3):</label>
-            <label><input type="checkbox" name="tech" value="HTML">HTML</label>
-            <label><input type="checkbox" name="tech" value="CSS">CSS</label>
-            <label><input type="checkbox" name="tech" value="JavaScript">JavaScript</label>
-            <label><input type="checkbox" name="tech" value="Python">Python</label>
-            <label><input type="checkbox" name="tech" value="Java">Java</label>
-            <label><input type="checkbox" name="tech" value="ReactJS">ReactJS</label>
-            <div class="error-message" id="tech-error"></div>
-</div>
-<br>
+            <option value="3" selected>3</option>
+          </select>
+        </div>
 
-<!-- Button to submit all the inputs -->
-        <input type="submit">                              
-    </form>
-</div>
-<script src="script.js"></script>
-</body>
+        <!-- Technologies checkbox group -->
+        <div class="form-group">
+          <label class="technologies">Technologies</label>
+          <div class="checkbox-group">
+            <label
+              ><input
+                type="checkbox"
+                name="technologies"
+                value="html"
+              />HTML</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                name="technologies"
+                value="css"
+              />CSS</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                name="technologies"
+                value="javascript"
+              />JavaScript</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                name="technologies"
+                value="react"
+              />React</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                name="technologies"
+                value="figma"
+              />Figma</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                name="technologies"
+                value="github"
+              />GitHub</label
+            >
+          </div>
+        </div>
+
+        <div class="form-group">
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
 </html>
