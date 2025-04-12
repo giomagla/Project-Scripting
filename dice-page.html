@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dice game</title>
+        <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class = "dice-game-container" id = "dice-game-container">
+       <h1>Dice Game</h1>
+       <h3>RESET THE GAME</h3>
+<!-- messages of players scores are stored in same class for styling purposes -->
+<div class="score-messages">
+<!-- messages of players scores values are determined in js file -->
+       <div id="player1Message"></div>
+       <div id="player2Message"></div>
+</div>  
+<!-- messages of who won the match and images determined in js file -->
+       <div id="victoryMessage"></div>
+       <div id="diceImages"></div>
+<!-- button which calls the funtion in js file when clicked -->
+       <button onclick="rollDice()">ROLL</button>
+<!-- Game history message also determined in js file -->
+       <p>Game History</p>
+       <div id = "historyScores"></div>
+
+               
+</div>
+<script src="script.js"></script>
+</body>
+</html>
