@@ -1,4 +1,5 @@
 /* Base styles */
+
 body {
   font-family: "Poppins", sans-serif;
   background-color: #1c1c1c;
@@ -20,6 +21,9 @@ h1 {
   font-size: 2.5em;
   margin-bottom: 30px;
 }
+
+
+/* Form Layout */
 
 .form-row {
   padding-top: 50px;
@@ -59,12 +63,15 @@ select#teamSize {
   max-width: 250px;
 }
 
+
+/* Checkbox Group */
+
 .checkbox-group {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 10px 40px;
   margin-top: 5px;
-  margin-bottom: 10px;
+  margin-bottom: 40px;
 }
 
 .checkbox-group label {
@@ -76,6 +83,9 @@ select#teamSize {
 .checkbox-group input[type="checkbox"] {
   margin: 0;
 }
+
+
+/* Buttons */
 
 button[type="submit"] {
   background-color: #333;
@@ -94,11 +104,16 @@ button[type="submit"]:hover {
   background-color: #555;
 }
 
+
+/* Technologies Section */
+
 .technologies {
   padding-top: 32px;
 }
 
-/* Error message styles */
+
+/* Error Styles */
+
 .error-message {
   color: #cc777b;
   font-size: 0.8em;
@@ -109,4 +124,140 @@ button[type="submit"]:hover {
 input.error,
 select.error {
   border-color: #cc777b;
+}
+
+
+/* Dice Game Layout */
+
+.dice-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.dice-container {
+  display: flex;
+  justify-content: center;
+  background-color: #e0e0e0;
+  width: 800px;
+  height: 700px;
+  text-align: center;
+  margin: 0 auto;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+#diceImages {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  padding-bottom: 40px;
+}
+
+#diceImages img {
+  width: 80px;
+  height: 80px;
+  border-radius: 10%;
+  border: solid 2px black;
+  box-shadow: 5px 5px 0px black;
+}
+
+
+/* Score & Victory Message */
+
+.score-messages {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+  font-weight: bold;
+  align-items: center;
+}
+
+h3 {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.vs {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 0 15px;
+}
+
+.score {
+  color: red;
+}
+
+#victoryMessage {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  font-weight: bold;
+  color: red;
+  font-size: 30px;
+}
+
+
+/* Roll Button */
+
+.dice-roll-button {
+  display: block;
+  margin: 20px auto;
+  width: 120px;
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  outline: 0;
+}
+
+.dice-roll-button:hover {
+  background-color: hsl(0, 97%, 63%);
+}
+
+.dice-roll-button:active {
+  background-color: hsl(0, 97%, 73%);
+}
+
+
+/* History Section */
+
+#historyScores {
+  text-align: left;
+  white-space: pre-line;
+  margin-top: 20px;
+}
+
+#historyScores div {
+  padding: 2px 0;
+}
+
+
+/* Game Result Heading */
+
+p {
+  font-size: 40px;
+  font-weight: bold;
+  color: green;
+  margin-top: 100px;
+  text-align: center;
+}
+
+
+/* Top Header */
+
+.top-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.top-header h1,
+.top-header h3 {
+  margin: 5px;
+  cursor: pointer;
 }
